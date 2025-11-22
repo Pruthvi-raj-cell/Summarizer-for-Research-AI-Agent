@@ -1,0 +1,32 @@
+# PDF Processing
+pymupdf==1.24.7
+
+# Token Counting
+tiktoken==0.7.0
+
+# LLM APIs (use as needed)
+openai==1.45.0
+anthropic==0.30.1
+
+# Transformers (optional for local models or embeddings)
+transformers==4.44.0
+sentence-transformers==3.0.1
+
+# Evaluation (similarity, metrics)
+scikit-learn==1.5.1
+rouge-score==0.1.2
+
+# Data Handling
+numpy==1.26.4
+pandas==2.2.2
+
+# Utility
+python-dotenv==1.0.1
+tqdm==4.66.4
+
+# Optional: metadata fetching from CrossRef
+requests==2.32.3
+
+# Optional: OCR fallback (if you want)
+pytesseract==0.3.10
+Pillow==10.4.0
