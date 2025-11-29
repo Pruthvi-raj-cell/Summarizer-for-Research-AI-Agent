@@ -21,3 +21,5 @@ Python <br>
 Libraries: PyPDF2 / pdfminer / fitz (PyMuPDF)<br>
 LLM: OpenAI / ChatGPT API (or any LLM you choose)<br>
 Tools: LangChain (optional), tiktoken for token counting<br>
+
+<h2>Under process</h2>
