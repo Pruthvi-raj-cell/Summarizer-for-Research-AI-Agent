@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
 ![Gemini](https://img.shields.io/badge/AI-Google%20Gemini%202.5-orange)
 ![Agentic Workflow](https://img.shields.io/badge/Workflow-Agentic-purple)
-![License](https://img.shields.io/badge/License-MIT-green)
+
 
 A smart **AI Agent** that automates the reading, chunking, and summarization of academic research papers. Built for the **Kaggle 5-Day AI Agents Challenge**, this project demonstrates an agentic workflow with long-term memory, external tool usage, and context-aware summarization.
 
