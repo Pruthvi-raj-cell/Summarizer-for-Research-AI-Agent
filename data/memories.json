@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "title": "",
+        "filename": "test_paper.pdf",
+        "summary": "Processed on System. Sections: 6. Preview: The Transformer is a novel neural network architecture for sequence transduction, uniquely based solely on attention mechanisms, completely dispensing with recurrent and convolutional networks. It achieves state-of-the-art results in machine translation with superior quality and significantly reduced training times due to increased parallelization capabilities....",
+        "date_processed": "2025-11-29T14:05:02.787531"
+    }
+]

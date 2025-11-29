@@ -11,7 +11,8 @@ class SummarizerAgent:
         # Configure the Google API
         api_key = os.getenv("GOOGLE_API_KEY")
         if not api_key:
-            raise ValueError("GOOGLE_API_KEY not found in .env")
+            # If the class is initialized but key is missing
+            raise ValueError("GOOGLE_API_KEY not found in .env file")
         
         genai.configure(api_key=api_key)
         self.model = genai.GenerativeModel(model)
@@ -42,13 +43,12 @@ class SummarizerAgent:
         """
 
         try:
-            # Gemini doesn't have a specific "json_object" mode like OpenAI, 
-            # so we ask it nicely in the prompt and clean the output.
+            # Generate content
             response = self.model.generate_content(prompt)
             text_response = response.text.strip()
             
-            # Clean up potential markdown formatting (```json ... ```)
-            if text_response.startswith("```json"):
+            # Clean up markdown formatting if Gemini adds it (e.g. ```json ... ```)
+            if text_response.startswith("```"):
                 text_response = text_response.replace("```json", "").replace("```", "")
             
             return json.loads(text_response)
